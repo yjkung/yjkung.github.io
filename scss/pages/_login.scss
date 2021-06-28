@@ -1,0 +1,91 @@
+.navbar{
+  background-color: $secondary-color;
+  margin-bottom: 80px;
+  @include mobile{
+    display: none;
+  }
+  .nav-list{
+    display: flex;
+    padding-top: 14px;
+    li{
+      margin-left: 28px;
+      @include text-size(20px,30px);
+      a{
+        color:white;
+      }
+      & a:hover{
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+.main{
+  display: flex;
+  margin-bottom: 82px;
+  @include mobile{
+    flex-direction: column;
+  }
+  img{
+    width: 730px;
+    height: 730px;
+    margin-right: 30px;
+  @include mobile{
+    width: 345px;
+    height: 220px;
+    }
+  }
+  .login-box{
+    h1{
+      @include text-size(32px,48px);
+      margin-bottom: 12px;
+      @include mobile{
+        margin-top: 28px;
+      }
+    }
+    p{
+      @include text-size(16px,22px);
+      margin-bottom: 4px;
+    }
+    input{
+      width: 350px;
+      height: 38px;
+      height: 38px;
+      border:1px solid #CED4DA;
+      border-radius: 4px;
+      @include mobile{
+        margin-bottom: 20px;
+      }
+      &::placeholder{
+        padding-left: 12px;
+        font-size: 16px;
+        color: #818A91;
+      }
+    }
+    a{
+      @include text-size(16px, 24px);
+      color:$secondary-color;
+      font-weight: bold;
+    }
+    .login-btn{
+      @include text-size(16px,22px);
+      margin-top: 43px;
+      height: 38px;
+      width: 65px;
+      border:1px solid $secondary-color;
+      border-radius: 4px;
+      background-color: white;
+      color:$secondary-color;
+    }
+    .signup-btn{
+      margin-left: 147px;
+      @include mobile{
+        margin-left: 142px;
+      }
+    }
+    .signin-btn, .signup-btn:hover{
+      background-color:$secondary-color;
+       color:white;
+    }
+  }
+}

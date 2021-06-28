@@ -1,0 +1,52 @@
+h1{
+  font-size: 30px;
+  /* 為了讓圖片可以完整顯示 */
+}
+
+h2{
+  font-size: 40px;
+  line-height: 38px;
+}
+
+h3{
+  font-size: 32px;
+  line-height: 48px;
+  font-weight: bold;
+}
+
+h4{
+  font-size: 24px;
+  line-height: 36px;
+  font-weight: bold;
+}
+
+a{
+  text-decoration: none;
+}
+
+*{
+  font-family: 'Noto Sans TC', sans-serif;
+  box-sizing: border-box;
+}
+
+.container{
+  max-width: 1100px;
+  margin: 0 auto;
+  @include mobile{
+    max-width: 345px;
+    margin:0 auto;
+  }
+}
+
+.helf-width{
+  width: 50%;
+}
+
+.btn{
+  width: 78%;
+  height: 60px;
+  border:2px solid #FFFFFF;
+  border-radius: 30px;
+  opacity: 1;
+  background-color:transparent;
+}

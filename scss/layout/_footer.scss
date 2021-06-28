@@ -1,0 +1,28 @@
+.footer{
+  background-color:$secondary-color;
+  .footer-box{
+    display: flex;
+    justify-content: space-between;
+    .logo-box{
+      @include flex-center;
+      p{
+        color:white;
+        font-size: 14px;
+      }
+    }
+    .logo{
+      @include imgReplace('../images/d’Perfumewhite.png');
+      color:white;  
+    }
+    .footer-list{
+      @include flex-center;
+      width: 263px;
+      padding: 28px 0;
+      color:white;
+      justify-content: space-between;
+      @include mobile{
+         display: none;
+      }
+    }
+  }
+}

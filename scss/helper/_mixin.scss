@@ -1,0 +1,29 @@
+@mixin imgReplace($url){
+  display: block;
+  background:url($url) no-repeat;
+  text-indent: 101%;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+@mixin flex-center{
+  display: flex;
+  align-items: center;
+}
+
+@mixin text-size($fz,$lh){
+  font-size:$fz;
+  line-height: $lh;
+}
+
+@mixin mobile{
+  @media (max-width:767px){
+    @content;
+}
+}
+
+@mixin imgBox($url){
+  height: 555px;
+  background: url($url) no-repeat;
+  background-size: cover;
+}
