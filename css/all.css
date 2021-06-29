@@ -323,14 +323,11 @@ a {
 }
 
 .banner {
-  display: block;
   background: url("../images/compression/index1.jpg") no-repeat;
-  text-indent: 101%;
-  overflow: hidden;
-  white-space: nowrap;
-  background-position: -20px 0;
   height: 870px;
   width: 100%;
+  background-size: cover;
+  background-position-y: -150px;
   position: relative;
   margin-bottom: 60px;
 }
@@ -347,7 +344,7 @@ a {
   color: white;
   position: absolute;
   top: 295px;
-  right: 250px;
+  right: 405px;
 }
 @media (max-width: 767px) {
   .banner .banner-text {
@@ -366,6 +363,7 @@ a {
   }
 }
 .banner .banner-text .btn {
+  display: block;
   font-size: 24px;
   line-height: 36px;
   color: white;
